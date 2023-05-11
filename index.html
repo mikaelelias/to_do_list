@@ -7,12 +7,12 @@
     <title>Lojão do Mecânico</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<header>
+    <h1>Lojão do Mecânico</h1>   
+</header>
 <body>
-    <div class="container_body">   
-        <div>
-            <h1>Lojão do Mecânico</h1>
-        </div> 
-        
+    <div class="container_body">       
         
         <div class="itens">
             <table>
@@ -50,35 +50,37 @@
                         <td>R$85,00</td>
                     </tr>
                 </tbody>
-            </table>
-
-            <div class="btn-new-product">
-                <button onclick="novocadastro()" class="btn-cadastro">Cadastrar novo Produto</button>
-            </div>
+            </table>            
         </div>      
-        
+    
         <section>
-        <div class="adicionar-produto">
-            <form class="form-product">
-                
-                <input type="text" name="item" class="input-padrao" required placeholder="item:"><br> 
+            <div class="btn-new-product">
+                <button class="btn_cadastro_abrirformulario">Cadastrar novo Produto</button>
+            </div>
+
+            <form class="form_product" style="display: none;">
+
+                <label for="item">Nome:</label>
+                <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br> 
         
-                
-                <input type="text" name="aplicacao" class="input-padrao" placeholder="aplicação:"><br>
+                <label for="aplicacao">Aplicacao:</label>
+                <input type="text" name="aplicacao" class="input-padrao" placeholder="Aplicação:"><br>
         
-                
-                <input type="text" name="compra" class="input-padrao" placeholder="valor de compra: R$"><br>
+                <label for="compra">Compra:</label>
+                <input type="text" name="compra" class="input-padrao" placeholder="Valor de compra"><br>
         
-                
-                <input type="text" name="estoque" class="input-padrao" placeholder="quantidade:"><br>
+                <label for="estoque">Estoque:</label>
+                <input type="text" name="estoque" class="input-padrao" placeholder="Quantidade:"><br>
         
-                
-                <input type="text" name="venda" class="input-padrao" placeholder="valor de venda: R$"><br>
+                <label for="venda">Venda:</label>
+                <input type="text" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
         
-                <button onclick="cadastrar()" type="submit" class="cadastrar">+</button>
+                <button type="submit" class="cadastrar">cadastrar</button>
+                
             </form>
         </section>
     </div> 
+    
     <script src="script.js"></script>  
 </body>
 </html>
