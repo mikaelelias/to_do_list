@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Novos Pacientes</title>
+    <title>Lojão do Mecânico</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container_body">   
         <div>
-            <h1>Cadastro de Novos Pacientes</h1>
+            <h1>Lojão do Mecânico</h1>
         </div> 
-        <div class="content">
-            <input type="text" class="input-padrao" placeholder="Digite o nome do novo paciente">
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-              </svg></div>
+        
         
         <div class="itens">
-            <ul>
-                <li>test<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                  </svg></button></li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-        </div>
-    </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Aplicação</th>
+                        <th>Compra</th>                        
+                        <th>Estoque</th>
+                        <th>Venda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bomba de Oléo</td>
+                        <td>GM</td>
+                        <td>R$149,90</td>
+                        <td>3</td>
+                        <td>R$194,87</td>
+                    </tr>
+
+                    <tr>
+                        <td>Comando de Válvula</td>
+                        <td>VW</td>
+                        <td>R$195,00</td>
+                        <td>2</td>
+                        <td>R$254,63</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pivô</td>
+                        <td>Fiat</td>
+                        <td>R$65,00</td>
+                        <td>6</td>
+                        <td>R$85,00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="btn-new-product">
+                <button onclick="novocadastro()" class="btn-cadastro">Cadastrar novo Produto</button>
+            </div>
+        </div>      
+        
+        <section>
+        <div class="adicionar-produto">
+            <form class="form-product">
+                
+                <input type="text" name="item" class="input-padrao" required placeholder="item:"><br> 
+        
+                
+                <input type="text" name="aplicacao" class="input-padrao" placeholder="aplicação:"><br>
+        
+                
+                <input type="text" name="compra" class="input-padrao" placeholder="valor de compra: R$"><br>
+        
+                
+                <input type="text" name="estoque" class="input-padrao" placeholder="quantidade:"><br>
+        
+                
+                <input type="text" name="venda" class="input-padrao" placeholder="valor de venda: R$"><br>
+        
+                <button onclick="cadastrar()" type="submit" class="cadastrar">+</button>
+            </form>
+        </section>
+    </div> 
+    <script src="script.js"></script>  
 </body>
 </html>
