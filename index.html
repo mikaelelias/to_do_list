@@ -15,9 +15,10 @@
     <div class="container_body">       
         
         <div class="itens">
-            <table>
+            <table class="tabela_cadastro">
                 <thead>
                     <tr>
+                        <th>Código</th>
                         <th>Item</th>
                         <th>Aplicação</th>
                         <th>Compra</th>                        
@@ -27,6 +28,7 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>--</td>
                         <td>Bomba de Oléo</td>
                         <td>GM</td>
                         <td>R$149,90</td>
@@ -35,6 +37,7 @@
                     </tr>
 
                     <tr>
+                        <td>--</td>
                         <td>Comando de Válvula</td>
                         <td>VW</td>
                         <td>R$195,00</td>
@@ -43,6 +46,7 @@
                     </tr>
 
                     <tr>
+                        <td>--</td>
                         <td>Pivô</td>
                         <td>Fiat</td>
                         <td>R$65,00</td>
@@ -61,7 +65,7 @@
             <form class="form_product" style="display: none;">
 
                 <label for="item">Nome:</label>
-                <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br> 
+                <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br>
         
                 <label for="aplicacao">Aplicacao:</label>
                 <input type="text" name="aplicacao" class="input-padrao" placeholder="Aplicação:"><br>
@@ -75,7 +79,7 @@
                 <label for="venda">Venda:</label>
                 <input type="text" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
         
-                <button type="submit" class="cadastrar">cadastrar</button>
+                <button type="submit" class="cadastrar" onclick="cadastrar()">cadastrar</button>
                 
             </form>
         </section>
