@@ -28,7 +28,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>--</td>
+                        <td>2425</td>
                         <td>Bomba de Oléo</td>
                         <td>GM</td>
                         <td>R$149,90</td>
@@ -37,8 +37,8 @@
                     </tr>
 
                     <tr>
-                        <td>--</td>
-                        <td>Comando de Válvula</td>
+                        <td>1248</td>
+                        <td>Válvula</td>
                         <td>VW</td>
                         <td>R$195,00</td>
                         <td>2</td>
@@ -46,7 +46,7 @@
                     </tr>
 
                     <tr>
-                        <td>--</td>
+                        <td>9874</td>
                         <td>Pivô</td>
                         <td>Fiat</td>
                         <td>R$65,00</td>
@@ -64,6 +64,9 @@
 
             <form class="form_product" style="display: none;">
 
+                <label for="codigo">Código:</label>
+                <input type="number" name="codigo" class="input-padrao" required placeholder="Código do Produto:"><br>
+
                 <label for="item">Nome:</label>
                 <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br>
         
@@ -71,15 +74,15 @@
                 <input type="text" name="aplicacao" class="input-padrao" placeholder="Aplicação:"><br>
         
                 <label for="compra">Compra:</label>
-                <input type="text" name="compra" class="input-padrao" placeholder="Valor de compra"><br>
+                <input type="number" name="compra" class="input-padrao" placeholder="Valor de compra"><br>
         
                 <label for="estoque">Estoque:</label>
                 <input type="text" name="estoque" class="input-padrao" placeholder="Quantidade:"><br>
         
                 <label for="venda">Venda:</label>
-                <input type="text" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
+                <input type="number" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
         
-                <button type="submit" class="cadastrar" onclick="cadastrar()">cadastrar</button>
+                <button type="submit" class="cadastrar" onclick="cadastrar(intem.value, aplicacao.value, compra.value, estoque.value, venda.value)">cadastrar</button>
                 
             </form>
         </section>

@@ -18,6 +18,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault(); // Impede que o formulário seja enviado
 
   // Recupera os valores dos campos do formulário
+  const codigo = form.querySelector('input[name="codigo"]').value;
   const item = form.querySelector('input[name="item"]').value;
   const aplicacao = form.querySelector('input[name="aplicacao"]').value;
   const compra = form.querySelector('input[name="compra"]').value;
@@ -36,20 +37,21 @@ form.addEventListener("submit", (event) => {
   const cellVenda = newRow.insertCell();
 
   // Define o conteúdo das células com os valores dos campos do formulário
-  cellCodigo.textContent = "--";
+  cellCodigo.textContent = codigo;
   cellItem.textContent = item;
   cellAplicacao.textContent = aplicacao;
   cellCompra.textContent = compra;
-  cellEstoque.textContent = estoque;
+  cellEstoque.textContent = estoque;    
   cellVenda.textContent = venda;
 
   // Limpa os campos do formulário
+  form.querySelector('input[name="codigo"]').value = "";
   form.querySelector('input[name="item"]').value = "";
   form.querySelector('input[name="aplicacao"]').value = "";
   form.querySelector('input[name="compra"]').value = "";
   form.querySelector('input[name="estoque"]').value = "";
   form.querySelector('input[name="venda"]').value = "";
 
-  // Oculta o formulário
-  form.style.display = "none";
+// Oculta o formulário
+form.style.display = "none";
 });
