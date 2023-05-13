@@ -74,5 +74,5 @@ function onSubmitForm(event) {
   form.style.display = "none";
 }
 
-// Adiciona um listener ao evento "submit" do formulário
+// Adiciona um listener ao evento "submit" do formulário.
 form.addEventListener("submit", onSubmitForm);
