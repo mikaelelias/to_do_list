@@ -28,31 +28,9 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Aqui vai as linhas da tabela geradas dinamicamente por javascript -->
                     <tr>
-                        <td>2425</td>
-                        <td>Bomba de Oléo</td>
-                        <td>GM</td>
-                        <td>R$149,90</td>
-                        <td>3</td>
-                        <td>R$194,87</td>
-                    </tr>
-
-                    <tr>
-                        <td>1248</td>
-                        <td>Válvula</td>
-                        <td>VW</td>
-                        <td>R$195,00</td>
-                        <td>2</td>
-                        <td>R$254,63</td>
-                    </tr>
-
-                    <tr>
-                        <td>9874</td>
-                        <td>Pivô</td>
-                        <td>Fiat</td>
-                        <td>R$65,00</td>
-                        <td>6</td>
-                        <td>R$150,00</td>
+                        <td colspan="6">Lista Vazia</td>
                     </tr>
                 </tbody>
             </table>            
@@ -66,7 +44,7 @@
             <form class="form_product" style="display: none;">
 
                 <label for="codigo">Código:</label>
-                <input type="number" name="codigo" class="input-padrao" required placeholder="Código do Produto:"><br>
+                <input type="tel" pattern="\d*" maxlength="4" class="input-padrao" name="codigo" required placeholder="Código do Produto:">
 
                 <label for="item">Nome:</label>
                 <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br>
@@ -83,7 +61,8 @@
                 <label for="venda">Venda:</label>
                 <input type="number" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
         
-                <button type="submit" class="cadastrar" onclick="cadastrar(intem.value, aplicacao.value, compra.value, estoque.value, venda.value)">cadastrar</button>
+                <button type="submit" class="formButton">cadastrar</button>
+                <button type="reset" class="formButton" data-resetButton>limpar campos</button>
                 
             </form>
         </section>
