@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(imagens/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    justify-items: center;
+}
+
 header {
     text-align: center;
     margin-top: 2rem;
