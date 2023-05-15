@@ -6,15 +6,14 @@
 }
 
 body {
-    background-image: url(imagens/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
+    background-color: #ffb400;
+    color:black
 }
 
 header {
     text-align: center;
     margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 .container_body {
@@ -25,7 +24,6 @@ header {
     margin-top: 2rem;
     gap: 2rem;
     font-family: 'Space Grotesk', sans-serif;
-
 }
 
 table, th, td {
@@ -37,6 +35,8 @@ table, th, td {
 table {
     border-collapse: collapse;
     margin: auto;
+    border: 0.5px;
+    background-color: #f1f0f6;
 }
 
 td, th {
@@ -46,32 +46,38 @@ td, th {
 
 th {
     font-size: 15px;
-    font-weight: bolder;
     text-transform: uppercase;
-    background-color: rgb(145, 148, 148);
 }
 
     
 tr:hover:nth-child(1n + 1) {
-background-color: #5b6263;
+background-color: #9a9e9e;
 color: #fff;
 }
 
 .btn_cadastro_abrirformulario {
     margin-top: 0.5rem;
-    height: 2rem;
     width: 20rem;
-    align-items: center;
+    align-items: center;.
+    border: none;
+    text-transform: uppercase;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: solid 1px white;
+    
 }
 
 .form_product {
     display: flex;
     flex-direction: column;
+    
 }
 
 form input {
     width: 40rem;
-    height: 2rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: solid 1px white;
 }
 
 label {
@@ -82,8 +88,10 @@ label {
 
 .formButton {
     align-items: center;
-    width: 20rem;
-    height: 2rem;
+    width: 19.9rem;
     margin-top: 1rem;
     text-transform: uppercase;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: solid 1px white;
 }
