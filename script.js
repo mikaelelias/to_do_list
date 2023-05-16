@@ -67,7 +67,7 @@ function onSubmitForm(event) {
   // Define o conteúdo das células com os valores dos campos do formulário
   renderTable(formData);
 
-  // Forca o botão de "limpar campos" ser precionado (clicado)
+  // Forca o botão de "limpar campos" ser precionado (clicado)///
   resetButton.click();
 
   // Oculta o formulário
