@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffb400;
+    background-color: #d8d8d8;
     color:black
 }
 
@@ -58,7 +58,7 @@ color: #fff;
 .btn_cadastro_abrirformulario {
     margin-top: 0.5rem;
     width: 20rem;
-    align-items: center;.
+    align-items: center;
     border: none;
     text-transform: uppercase;
     height: 2.5rem;
@@ -94,4 +94,9 @@ label {
     height: 2.5rem;
     border-radius: 5px;
     border: solid 1px white;
+}
+
+img {
+    width: 15%;
+    height: 30%;
 }
