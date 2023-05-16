@@ -53,7 +53,7 @@ function onSubmitForm(event) {
   // Recupera os valores dos campos do formulário
   const formData = new FormData(event.target);
 
-  // Cria uma nova linha na tabela
+  // Cria uma nova linha na tabela //
   const newRow = table.insertRow();
 
   // Adiciona as células na nova linha
