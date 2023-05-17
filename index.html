@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lojão do Mecânico</title>
+    <title>João Centro Automotivo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>  
 </head>
 
 <header>
-    <h1>Lojão do Mecânico</h1>   
+    <img src="imagens/010101.png" alt="logo-car">
 </header>
 <body>
     <div class="container_body">       
@@ -27,31 +28,9 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Aqui vai as linhas da tabela geradas dinamicamente por javascript -->
                     <tr>
-                        <td>24225</td>
-                        <td>Bomba de Oléo</td>
-                        <td>GM</td>
-                        <td>R$149,90</td>
-                        <td>3</td>
-                        <td>R$194,87</td>
-                    </tr>
-
-                    <tr>
-                        <td>1248</td>
-                        <td>Válvula</td>
-                        <td>VW</td>
-                        <td>R$195,00</td>
-                        <td>2</td>
-                        <td>R$254,63</td>
-                    </tr>
-
-                    <tr>
-                        <td>9874</td>
-                        <td>Pivô</td>
-                        <td>Fiat</td>
-                        <td>R$65,00</td>
-                        <td>6</td>
-                        <td>R$85,00</td>
+                        <td colspan="6">Lista Vazia - Cadastre um Produto</td>
                     </tr>
                 </tbody>
             </table>            
@@ -65,7 +44,7 @@
             <form class="form_product" style="display: none;">
 
                 <label for="codigo">Código:</label>
-                <input type="number" name="codigo" class="input-padrao" required placeholder="Código do Produto:"><br>
+                <input type="tel" pattern="\d*" maxlength="4" class="input-padrao" name="codigo" required placeholder="Código do Produto:">
 
                 <label for="item">Nome:</label>
                 <input type="text" name="item" class="input-padrao" required placeholder="Nome do produto:"><br>
@@ -74,20 +53,19 @@
                 <input type="text" name="aplicacao" class="input-padrao" placeholder="Aplicação:"><br>
         
                 <label for="compra">Compra:</label>
-                <input type="number" name="compra" class="input-padrao" placeholder="Valor de compra"><br>
+                <input type="number" name="compra" class="input-padrao" placeholder="Valor de compra:"><br>
         
                 <label for="estoque">Estoque:</label>
                 <input type="text" name="estoque" class="input-padrao" placeholder="Quantidade:"><br>
         
                 <label for="venda">Venda:</label>
-                <input type="number" name="venda" class="input-padrao" placeholder="Valor de venda"><br>
+                <input type="number" name="venda" class="input-padrao" placeholder="Valor de venda:"><br>
         
-                <button type="submit" class="cadastrar" onclick="cadastrar(intem.value, aplicacao.value, compra.value, estoque.value, venda.value)">cadastrar</button>
+                <button type="submit" class="formButton">cadastrar</button>
+                <button type="reset" class="formButton" data-resetButton>limpar campos</button>
                 
-            </form>
-        </section>
-    </div> 
-    
-    <script src="script.js"></script>  
+            </form>       
+        </section>        
+    </div>  
 </body>
 </html>
